@@ -37,7 +37,7 @@ def mediana_histograma():
 def moda_histograma():
     ponto_medio_por_classe = []
     for i in range(len(limite_corte_entre_classes)):
-        ponto_medio = (limite_corte_entre_classes[i] + 1) / 2
+        ponto_medio = (limite_corte_entre_classes[i] + (limite_corte_entre_classes[i] - 1)) / 2
         ponto_medio_por_classe.append(ponto_medio)
     return ponto_medio_por_classe
 
@@ -125,23 +125,23 @@ def definir_valores_das_classes_histograma():
     dez = 0
 
     for i in scores:
-        if i < 2:
+        if i < 1:
             um += 1
-        elif i < 3:
+        elif i < 2:
             dois += 1
-        elif i < 4:
+        elif i < 3:
             tres += 1
-        elif i < 5:
+        elif i < 4:
             quatro += 1
-        elif i < 6:
+        elif i < 5:
             cinco += 1
-        elif i < 7:
+        elif i < 6:
             seis += 1
-        elif i < 8:
+        elif i < 7:
             sete += 1
-        elif i < 9:
+        elif i < 8:
             oito += 1
-        elif i < 10:
+        elif i < 9:
             nove += 1
         else:
             dez += 1
