@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Plataforma de Assistência a Vida Estudantil - PAVE</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/footer_align.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="flow-text">
+
+<header>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="{% url 'max_value' %}">Valor Máximo</a></li>
+        <li><a href="{% url 'min_value' %}">Valor Mínimo</a></li>
+        <li><a href="{% url 'amplitude' %}">Amplitude Total</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="{% url 'show_media' %}">Média</a></li>
+        <li><a href="{% url 'show_median' %}">Mediana</a></li>
+        <li><a href="{% url 'show_mode' %}">Moda</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="{% url 'show_variance' %}">Variância</a></li>
+        <li><a href="{% url 'show_standard_deviation' %}">Desvio Padrão</a></li>
+        <li><a href="{% url 'show_coefficient_of_variation' %}">Coeficiente de Variação</a></li>
+    </ul>
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href="{% url 'show_histogram' %}">Histograma</a></li>
+        <li><a href="{% url 'show_mode_histogram' %}">Moda Histograma</a></li>
+        <li><a href="{% url 'show_media_histogram' %}">Média Histograma</a></li>
+        <li><a href="{% url 'show_median_histogram' %}">Mediana Histograma</a></li>
+        <li><a href="{% url 'show_variance_histogram' %}">Variância do Histograma</a></li>
+        <li><a href="{% url 'show_standard_deviation_histogram' %}">Desvio Padrão do Histograma</a></li>
+        <li><a href="{% url 'show_coefficient_of_variation_histogram' %}">Coeficiente de Variação do Histograma</a></li>
+    </ul>
+    <nav class="green darken-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="{% url 'index' %}" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Valores<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Média e cia<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown3">Variância e cia<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown4">Histograma e cia<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    {% block content %} {% endblock %}
+</div>
+
+
+<footer class="page-footer green darken-3 center">
+    <div class="footer-copyright green darken-3">
+        <div class="container">
+            <strong class="white-text">&copy; LIMS - Laboratory of Innovation on Multimedia Systems</strong>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $(".dropdown-trigger").dropdown({
+            coverTrigger: false
+        });
+        $('.sidenav').sidenav();
+        $('select').formSelect();
+        $('.modal').modal();
+        $('.materialboxed').materialbox();
+    });
+</script>
+</body>
+</html>
