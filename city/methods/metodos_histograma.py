@@ -7,7 +7,47 @@ cities = City.objects.all()
 scores = [city.score for city in cities]
 limite_corte_entre_classes = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
 
+def corte_de_notas():
+    corte = []
+    for i in range(len(limite_corte_entre_classes)):
+        a = "%d |- %d" % (i, i + 1)
+        corte.append(a)
+    return corte
 
+
+def gerar_tabela_de_frequencia():
+    notas = limite_corte_entre_classes
+    fi = definir_valores_das_classes_histograma()
+    xi = moda_histograma()
+    fi_xi_list = []
+    fi_xi_quad_list = []
+
+    for i in range(len(xi)):
+        fi_xi = fi[i] * xi[i]
+        fi_xi_quad = fi[i] * pow(xi[i], 2)
+        fi_xi_list.append(fi_xi)
+        fi_xi_quad_list.append(fi_xi_quad)
+
+    tabela_de_frequencias = {}
+    tabela_de_frequencias['notas'] = notas
+    tabela_de_frequencias['fi'] = fi
+    tabela_de_frequencias['xi'] = xi
+    tabela_de_frequencias['fi_xi_list'] = fi_xi_list
+    tabela_de_frequencias['fi_xi_quad_list'] = fi_xi_quad_list
+
+    return tabela_de_frequencias
+
+
+def createLinesForHTML(dicio):
+    indice = len(dicio['fi'])
+    matriz = []
+    vetor = []
+    for i in range(0,indice-1):
+        for key in dicio:
+            vetor.append(dicio[key][i])
+        matriz.append(vetor)
+        vetor = []
+    return matriz
 # coeficiente de variação
 def media_histograma():
     qtd_por_media = definir_valores_das_classes_histograma()

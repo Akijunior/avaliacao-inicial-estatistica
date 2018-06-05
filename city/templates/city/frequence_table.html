@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h4>Tabela de frequências de paises.csv</h4>
+
+    <table class="highlight centered">
+        <thead>
+        <tr>
+            <th>Notas</th>
+            <th><i>fi</i></th>
+            <th><i>xi</i></th>
+            <th><i>fi * xi</i></th>
+            <th><i>fi * xi²</i></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for item in scores %}
+            <tr>
+                <td>{{ item }}</td>
+            </tr>
+        {% endfor %}
+
+        {#        {% for item in scores %}#}
+        {#                <td>{{ item }}</td>#}
+        {#            {% endfor %}#}
+        {#        {% for item in fi %}#}
+        {#            <tr>#}
+        {#                <td>{{ item }}</td>#}
+        {#            </tr>#}
+        {#        {% endfor %}#}
+        {##}
+        {#        {% for item in xi %}#}
+        {#            <tr>#}
+        {#                <td>{{ item }}</td>#}
+        {#            </tr>#}
+        {#        {% endfor %}#}
+        {##}
+        {#        {% for item in fi_xi_list %}#}
+        {#            <tr>#}
+        {#                <td>{{ item }}</td>#}
+        {#            </tr>#}
+        {#        {% endfor %}#}
+        {##}
+        {#        {% for item in fi_xi_quad_list %}#}
+        {#            <tr>#}
+        {#                <td>{{ item }}</td>#}
+        {#            </tr>#}
+        {#        {% endfor %}#}
+        </tbody>
+
+
+        {#        {% for i in "x"|ljust:"4" %}#}
+        {#            {{ forloop.counter0 }}#}
+        {#            <!-- Access numeric variable (1-based index) -->#}
+        {#            {{ forloop.counter }}#}
+        {#        {% endfor %}#}
+    </table>
+{% endblock %}

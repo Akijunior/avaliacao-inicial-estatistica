@@ -8,69 +8,113 @@ from city.methods.metodos_histograma import *
 
 def max_calculation_value(request):
     max_value = calcular_valor_maximo()
-    return render(request, 'city/max_value.html',{'max_value': max_value})
+    return render(request, 'city/max_value.html', {'max_value': max_value})
+
 
 def min_calculation_value(request):
     min_value = calcular_valor_minimo()
-    return render(request, 'city/min_value.html',{'min_value': min_value})
+    return render(request, 'city/min_value.html', {'min_value': min_value})
+
 
 def amplitude(request):
     amplitude = calcular_amplitude_total()
-    return render(request, 'city/amplitude.html',{'amplitude': amplitude})
+    return render(request, 'city/amplitude.html', {'amplitude': amplitude})
+
 
 def show_media(request):
     media = calcular_media()
-    return render(request, 'city/media.html',{'media': media})
+    return render(request, 'city/media.html', {'media': media})
+
 
 def show_median(request):
     median = calcular_mediana()
-    return render(request, 'city/median.html',{'median': median})
+    return render(request, 'city/median.html', {'median': median})
+
 
 def show_mode(request):
     mode = calcular_moda()
-    return render(request, 'city/mode.html',{'mode': mode})
+    return render(request, 'city/mode.html', {'mode': mode})
+
 
 def show_variance(request):
     variance = calcular_variancia()
-    return render(request, 'city/variance.html',{'variance': variance})
+    return render(request, 'city/variance.html', {'variance': variance})
+
 
 def show_standard_deviation(request):
     standard_deviation = calcular_desvio_padrao()
-    return render(request, 'city/standard_deviation.html',{'standard_deviation': standard_deviation})
+    return render(request, 'city/standard_deviation.html', {'standard_deviation': standard_deviation})
+
 
 def show_coefficient_of_variation(request):
     coefficient_of_variation = calcular_coeficiente_de_variacao()
-    return render(request, 'city/coefficient_of_variation.html',{'coefficient_of_variation': coefficient_of_variation})
+    return render(request, 'city/coefficient_of_variation.html', {'coefficient_of_variation': coefficient_of_variation})
+
 
 def show_histogram(request):
     histogram = gerador_de_histograma()
-    return render(request, 'city/histogram.html',{'histogram': histogram})
+    return render(request, 'city/histogram.html', {'histogram': histogram})
+
 
 def show_media_histogram(request):
     media = media_histograma()
-    return render(request, 'city/histogram_media.html',{'media': media})
+    return render(request, 'city/histogram_media.html', {'media': media})
+
 
 def show_median_histogram(request):
     median = mediana_histograma()
-    return render(request, 'city/histogram_median.html',{'median': median})
+    return render(request, 'city/histogram_median.html', {'median': median})
+
 
 def show_mode_histogram(request):
     mode = moda_histograma()
-    return render(request, 'city/histogram_mode.html',{'mode': mode})
+    return render(request, 'city/histogram_mode.html', {'mode': mode})
+
 
 def show_variance_histogram(request):
     variance = variancia_populacional_histograma()
-    return render(request, 'city/histogram_variance.html',{'variance': variance})
+    return render(request, 'city/histogram_variance.html', {'variance': variance})
+
 
 def show_standard_deviation_histogram(request):
     standard_deviation = desvio_padrao_populacional_histograma()
     return render(request, 'city/histogram_standard_deviation.html',
                   {'standard_deviation': standard_deviation})
 
+
 def show_coefficient_of_variation_histogram(request):
     coefficient_of_variation = coeficiente_de_variacao_histograma()
     return render(request, 'city/histogram_coefficient_of_variation.html',
                   {'coefficient_of_variation': coefficient_of_variation})
+
+
+def show_frequence_table(request):
+    # frequence_table = gerar_tabela_de_frequencia()
+    # linhas = createLinesForHTML(frequence_table)
+    scores = corte_de_notas()
+    fi = definir_valores_das_classes_histograma()
+    print("FI -> ", fi)
+    xi = moda_histograma()
+    print(xi)
+    fi_xi_list = []
+    fi_xi_quad_list = []
+
+    for i in range(len(xi)):
+        fi_xi = fi[i] * xi[i]
+        fi_xi_quad = fi[i] * pow(xi[i], 2)
+        fi_xi_list.append(fi_xi)
+        fi_xi_quad_list.append(fi_xi_quad)
+
+    context = {
+        'scores': scores,
+        'fi': fi,
+        'xi': xi,
+        'fi_xi_list': fi_xi_list,
+        'fi_xi_quad_list': fi_xi_quad_list
+    }
+
+    return render(request, 'city/frequence_table.html', context)
+
 
 # def iniciar():
 #     # import csv
@@ -86,4 +130,3 @@ def show_coefficient_of_variation_histogram(request):
 
 def index(request):
     return render(request, 'city/page.html')
-

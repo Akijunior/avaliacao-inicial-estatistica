@@ -12,6 +12,7 @@ urlpatterns = [
     path('show_variance/', show_variance, name='show_variance'),
     path('show_standard_deviation/', show_standard_deviation, name='show_standard_deviation'),
     path('show_coefficient_of_variation/', show_coefficient_of_variation, name='show_coefficient_of_variation'),
+    path('frequence_table/', show_frequence_table, name='show_frequence_table'),
     path('histogram/', show_histogram, name='show_histogram'),
     path('show_histogram_mode/', show_mode_histogram, name='show_mode_histogram'),
     path('show_histogram_media/', show_media_histogram, name='show_media_histogram'),
