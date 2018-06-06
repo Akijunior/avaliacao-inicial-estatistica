@@ -89,32 +89,13 @@ def show_coefficient_of_variation_histogram(request):
 
 
 def show_frequence_table(request):
-    # frequence_table = gerar_tabela_de_frequencia()
-    # linhas = createLinesForHTML(frequence_table)
-    scores = corte_de_notas()
-    fi = definir_valores_das_classes_histograma()
-    print("FI -> ", fi)
-    xi = moda_histograma()
-    print(xi)
-    fi_xi_list = []
-    fi_xi_quad_list = []
+    lines = createLinesForHTML(gerar_tabela_de_frequencia())
+    return render(request, 'city/frequence_table.html', {'lines': lines})
 
-    for i in range(len(xi)):
-        fi_xi = fi[i] * xi[i]
-        fi_xi_quad = fi[i] * pow(xi[i], 2)
-        fi_xi_list.append(fi_xi)
-        fi_xi_quad_list.append(fi_xi_quad)
 
-    context = {
-        'scores': scores,
-        'fi': fi,
-        'xi': xi,
-        'fi_xi_list': fi_xi_list,
-        'fi_xi_quad_list': fi_xi_quad_list
-    }
-
-    return render(request, 'city/frequence_table.html', context)
-
+def show_freq_distr_table(request):
+    lines = createLinesForHTML(criar_tabela_de_distr_de_frequencia())
+    return render(request, 'city/frequency_distribution_table.html', {'lines': lines})
 
 # def iniciar():
 #     # import csv
