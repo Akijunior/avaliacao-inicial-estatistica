@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57894321-e449-469b-8a5c-a06292b559c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/city/templates/city/frequency_distribution_table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/city/methods/metodos_histograma.py" beforeDir="false" afterPath="$PROJECT_DIR$/city/methods/metodos_histograma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/city/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city/templates/city/frequence_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/city/templates/city/frequence_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/city/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/city/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/city/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="101" column="66" selection-start-line="101" selection-start-column="66" selection-end-line="101" selection-end-column="66" />
+            <state relative-caret-position="1564">
+              <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -37,16 +32,16 @@
       <file leaf-file-name="frequence_table.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/city/templates/city/frequence_table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="24" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="391">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frequency_distribution_table.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frequency_distribution_table.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/city/templates/city/frequency_distribution_table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="408">
               <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
@@ -55,7 +50,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/city/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -64,20 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/city/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="metodos_histograma.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="metodos_histograma.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/city/methods/metodos_histograma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="221">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -107,6 +93,11 @@
       <find>gerar_tabela_de_frequencia()</find>
       <find>erar</find>
       <find>len</find>
+      <find>definir_valores_das_classes_histograma</find>
+      <find>limite_corte_entre_classes</find>
+      <find>3.3</find>
+      <find>3.4</find>
+      <find>&quot;10&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,11 +134,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/city/methods/tk_and_threads.py" />
         <option value="$PROJECT_DIR$/city/templates/city/frequence_table.html" />
-        <option value="$PROJECT_DIR$/city/methods/metodos_histograma.py" />
-        <option value="$PROJECT_DIR$/city/views.py" />
         <option value="$PROJECT_DIR$/city/urls.py" />
         <option value="$PROJECT_DIR$/city/templates/base.html" />
         <option value="$PROJECT_DIR$/city/templates/city/frequency_distribution_table.html" />
+        <option value="$PROJECT_DIR$/city/views.py" />
+        <option value="$PROJECT_DIR$/city/methods/metodos_histograma.py" />
       </list>
     </option>
   </component>
@@ -168,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,24 +175,19 @@
               <item name="primeira_avaliacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="primeira_avaliacao" type="462c0819:PsiDirectoryNode" />
               <item name="city" type="462c0819:PsiDirectoryNode" />
-              <item name="methods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="primeira_avaliacao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="primeira_avaliacao" type="462c0819:PsiDirectoryNode" />
-              <item name="city" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Django Rest Framework/drf_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programacao para Internet/aula_06_06/DRF-Init/games-api-por-fazer-06-06/gamesapi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -270,7 +255,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.3297546" />
@@ -278,8 +262,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297546" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3297546" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3297546" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297546" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30786687" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297546" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2344932" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.672466" />
@@ -616,13 +600,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/city/methods/tk_and_threads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/city/methods/tk_and_threads.py" />
     <entry file="file://$PROJECT_DIR$/city/templates/city/histogram.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -637,53 +615,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dados_cidades.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44454">
-          <caret line="2932" column="14" selection-start-line="2932" selection-start-column="12" selection-end-line="2932" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/city/templates/city/frequence_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/city/methods/metodos_de_calculos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#24#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/city/methods/metodos_histograma.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/city/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="101" column="66" selection-start-line="101" selection-start-column="66" selection-end-line="101" selection-end-column="66" />
+        <state relative-caret-position="1564">
+          <caret line="96" column="69" selection-start-line="96" selection-start-column="69" selection-end-line="96" selection-end-column="69" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/city/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dados_cidades.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93818">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/city/templates/city/frequency_distribution_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/city/templates/city/frequence_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/city/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="255">
           <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -691,17 +670,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/city/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/city/methods/metodos_histograma.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/city/templates/city/frequency_distribution_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

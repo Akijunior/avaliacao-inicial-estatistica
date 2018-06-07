@@ -6,12 +6,12 @@ from city.models import City
 cities = City.objects.all()
 scores = [city.score for city in cities]
 total = len(scores)
-limite_corte_entre_classes = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
+limite_corte_entre_classes = [3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9.0, 9.5, 10]
 
 def corte_de_notas():
     corte = []
-    for i in range(len(limite_corte_entre_classes)):
-        a = "%d |- %d" % (i, i + 1)
+    for i in limite_corte_entre_classes:
+        a = "%.1f |- %.1f" % (i, i + 0.5)
         corte.append(a)
     return corte
 
@@ -178,64 +178,70 @@ def gerador_de_histograma():
 def gerador_de_nomes_para_labels(limite_corte_entre_classes):
     nomes = []
     for i in limite_corte_entre_classes:
-        nomes.append("De %.2f \na %.2f\n" % (i - 1, i))
+        nomes.append("De %.2f \na %.2f\n" % (i - 0.5, i))
     return tuple(nomes)
 
 
 def definir_valores_das_classes_histograma():
-    # qtd_por_media = {}
-    um = 0
-    dois = 0
-    tres = 0
+    tres_meio = 0
     quatro = 0
+    quatro_meio = 0
     cinco = 0
+    cinco_meio = 0
     seis = 0
+    seis_meio = 0
     sete = 0
+    sete_meio = 0
     oito = 0
+    oito_meio = 0
     nove = 0
+    nove_meio = 0
     dez = 0
 
     for i in scores:
-        if i < 1:
-            um += 1
-        elif i < 2:
-            dois += 1
-        elif i < 3:
-            tres += 1
+        if i < 3.5:
+            tres_meio += 1
         elif i < 4:
             quatro += 1
+        elif i < 4.5:
+            quatro_meio += 1
         elif i < 5:
             cinco += 1
+        elif i < 5.5:
+            cinco_meio += 1
         elif i < 6:
             seis += 1
+        elif i < 6.5:
+            seis_meio += 1
         elif i < 7:
             sete += 1
+        elif i < 7.5:
+            sete_meio += 1
         elif i < 8:
             oito += 1
+        elif i < 8.5:
+            oito_meio += 1
         elif i < 9:
             nove += 1
+        elif i < 9.5:
+            nove_meio += 1
         else:
             dez += 1
-    # qtd_por_media["um"] = um
-    #     # qtd_por_media["dois"] = dois
-    #     # qtd_por_media["tres"] = tres
-    #     # qtd_por_media["quatro"] = quatro
-    #     # qtd_por_media["cinco"] = cinco
-    #     # qtd_por_media["seis"] = seis
-    #     # qtd_por_media["sete"] = sete
-    #     # qtd_por_media["oito"] = oito
-    #     # qtd_por_media["nove"] = nove
-    #     # qtd_por_media["dez"] = dez
+
     qtd_por_media = []
-    qtd_por_media.append(um)
-    qtd_por_media.append(dois)
-    qtd_por_media.append(tres)
+    qtd_por_media.append(tres_meio)
     qtd_por_media.append(quatro)
+    qtd_por_media.append(quatro_meio)
     qtd_por_media.append(cinco)
+    qtd_por_media.append(cinco_meio)
     qtd_por_media.append(seis)
+    qtd_por_media.append(seis_meio)
     qtd_por_media.append(sete)
+    qtd_por_media.append(sete_meio)
     qtd_por_media.append(oito)
+    qtd_por_media.append(oito_meio)
     qtd_por_media.append(nove)
+    qtd_por_media.append(nove_meio)
     qtd_por_media.append(dez)
 
     return qtd_por_media
